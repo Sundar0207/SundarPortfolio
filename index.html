@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Portfolio website for Sundara Mahaa Raja, Computer Science undergraduate and full stack developer."
+    />
+    <title>Sundara Mahaa Raja | Portfolio</title>
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='8' fill='%2340d6b1'/%3E%3Ctext x='32' y='39' text-anchor='middle' font-size='20' font-family='Arial' font-weight='700' fill='%2306100e'%3ESMR%3C/text%3E%3C/svg%3E"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <canvas id="signal-canvas" aria-hidden="true"></canvas>
+
+    <header class="site-header" data-section="top">
+      <a class="brand" href="#top" aria-label="Go to top">
+        <span class="brand-mark">SMR</span>
+        <span class="brand-text">Sundara Mahaa Raja</span>
+      </a>
+      <nav class="main-nav" aria-label="Primary navigation">
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="theme-toggle" type="button" aria-label="Switch color theme" title="Switch color theme">
+        <span class="theme-icon" aria-hidden="true">T</span>
+      </button>
+    </header>
+
+    <main id="top">
+      <section class="hero section" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">Computer Science Undergraduate</p>
+          <h1 id="hero-title">Sundara Mahaa Raja</h1>
+          <p class="hero-text">
+            Java and Python focused developer building full stack applications,
+            database systems, and cybersecurity projects with a strong DSA and
+            OOP foundation.
+          </p>
+          <div class="hero-actions" aria-label="Primary actions">
+            <a class="button primary" href="#projects">View work</a>
+            <a class="button secondary" href="./assets/Resume.pdf" download>Download resume</a>
+          </div>
+        </div>
+        <aside class="hero-panel" aria-label="Profile highlights">
+          <div class="status-row">
+            <span class="pulse" aria-hidden="true"></span>
+            <span>Open to software development opportunities</span>
+          </div>
+          <div class="metric-grid">
+            <div>
+              <strong>4</strong>
+              <span>Major Projects</span>
+            </div>
+            <div>
+              <strong>9.8</strong>
+              <span>Diploma CGPA</span>
+            </div>
+            <div>
+              <strong>N5</strong>
+              <span>JLPT Candidate</span>
+            </div>
+          </div>
+        </aside>
+      </section>
+
+      <section class="section profile-band" aria-labelledby="profile-title">
+        <div>
+          <p class="eyebrow">Profile</p>
+          <h2 id="profile-title">Software builder with security, data, and web depth.</h2>
+        </div>
+        <p>
+          Experienced in Java, Python, Data Structures and Algorithms, Object-Oriented
+          Programming, DBMS, and full stack web development. Project work spans
+          ransomware defense, MERN applications, traffic management databases,
+          and Java reservation systems.
+        </p>
+      </section>
+
+      <section class="section projects-section" id="projects" aria-labelledby="projects-title">
+        <div class="section-heading">
+          <p class="eyebrow">Selected Work</p>
+          <h2 id="projects-title">Projects that move from concept to working systems.</h2>
+        </div>
+        <div class="filter-bar" role="list" aria-label="Project filters">
+          <button class="filter active" type="button" data-filter="all">All</button>
+          <button class="filter" type="button" data-filter="cybersecurity">Cybersecurity</button>
+          <button class="filter" type="button" data-filter="web">Web</button>
+          <button class="filter" type="button" data-filter="database">Database</button>
+          <button class="filter" type="button" data-filter="java">Java</button>
+        </div>
+        <div class="projects-grid">
+          <article class="project-card featured" data-category="cybersecurity" tabindex="0">
+            <div class="project-visual cyber" aria-hidden="true">
+              <span></span><span></span><span></span><span></span>
+            </div>
+            <div class="project-content">
+              <p class="project-type">Python / Linux / Machine Learning</p>
+              <h3>Proactive Ransomware Defense</h3>
+              <p>
+                Ransomware detection and mitigation system using behavior analysis,
+                honeyfiles, suspicion scoring, Random Forest prediction, automated
+                alerts, and Copy-on-Write recovery.
+              </p>
+              <ul class="project-points">
+                <li>Real-time file access monitoring</li>
+                <li>Honeyfile-based cyber deception</li>
+                <li>Virtualized Linux testing environment</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="web" tabindex="0">
+            <div class="project-visual pc" aria-hidden="true">
+              <span></span><span></span><span></span>
+            </div>
+            <div class="project-content">
+              <p class="project-type">MERN Stack</p>
+              <h3>PC Building Website</h3>
+              <p>
+                E-commerce platform for custom PC builds with simulation-based
+                recommendations, compatibility checks, budget guidance, and
+                bottleneck detection.
+              </p>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="database web" tabindex="0">
+            <div class="project-visual traffic" aria-hidden="true">
+              <span></span><span></span><span></span>
+            </div>
+            <div class="project-content">
+              <p class="project-type">MERN / MongoDB</p>
+              <h3>Smart Traffic Management</h3>
+              <p>
+                Centralized interface for traffic signals, congestion monitoring,
+                route analysis, CRUD operations, and schema relationships.
+              </p>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="java database" tabindex="0">
+            <div class="project-visual ticket" aria-hidden="true">
+              <span></span><span></span><span></span><span></span>
+            </div>
+            <div class="project-content">
+              <p class="project-type">Java / Database</p>
+              <h3>Movie Ticket Reservation</h3>
+              <p>
+                Booking system with admin movie and schedule controls, user seat
+                reservations, history tracking, database integration, and live updates.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section skills-section" id="skills" aria-labelledby="skills-title">
+        <div class="section-heading">
+          <p class="eyebrow">Skill Map</p>
+          <h2 id="skills-title">Core tools and strengths.</h2>
+        </div>
+        <div class="skills-layout">
+          <div class="skill-orbit" aria-label="Skill focus visualization">
+            <button class="orbit-item active" type="button" data-skill="Java">Java</button>
+            <button class="orbit-item" type="button" data-skill="Python">Python</button>
+            <button class="orbit-item" type="button" data-skill="MERN">MERN</button>
+            <button class="orbit-item" type="button" data-skill="DBMS">DBMS</button>
+            <button class="orbit-item" type="button" data-skill="DSA">DSA</button>
+            <div class="orbit-core">
+              <span id="skill-focus">Java</span>
+              <small>Current focus</small>
+            </div>
+          </div>
+          <div class="skill-lists">
+            <div class="skill-group">
+              <h3>Programming</h3>
+              <div class="chips">
+                <span>C</span><span>C++</span><span>Java</span><span>Python</span>
+              </div>
+            </div>
+            <div class="skill-group">
+              <h3>Web & Database</h3>
+              <div class="chips">
+                <span>HTML</span><span>CSS</span><span>JavaScript</span><span>MERN</span>
+                <span>MongoDB</span><span>Mongoose</span><span>SQLite</span>
+              </div>
+            </div>
+            <div class="skill-group">
+              <h3>Core Subjects</h3>
+              <div class="chips">
+                <span>DSA</span><span>OOP</span><span>DBMS</span><span>Operating Systems</span>
+              </div>
+            </div>
+            <div class="skill-group">
+              <h3>Languages & Soft Skills</h3>
+              <div class="chips">
+                <span>Tamil</span><span>English</span><span>Japanese N5 Candidate</span>
+                <span>Communication</span><span>Leadership</span><span>Teamwork</span><span>Problem Solving</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section education-section" id="education" aria-labelledby="education-title">
+        <div class="section-heading">
+          <p class="eyebrow">Education</p>
+          <h2 id="education-title">Academic path.</h2>
+        </div>
+        <div class="timeline">
+          <article class="timeline-item">
+            <time>2024 - Present</time>
+            <div>
+              <h3>Anna University, Chennai-25</h3>
+              <p>Bachelor of Engineering in Computer Science and Engineering</p>
+              <strong>CGPA: 7.01 / 10.0</strong>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <time>2022 - 2024</time>
+            <div>
+              <h3>Sankar Polytechnic College, Sankar Nagar, Tirunelveli-357</h3>
+              <p>Diploma in Computer Engineering</p>
+              <strong>CGPA: 9.8 / 10.0</strong>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <time>2020 - 2022</time>
+            <div>
+              <h3>Bell English Matriculation Higher Secondary School, Tirunelveli-2</h3>
+              <p>Higher Secondary Education</p>
+              <strong>HSS: 75.33%</strong>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section contact-section" id="contact" aria-labelledby="contact-title">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2 id="contact-title">Let us build something useful.</h2>
+          <p>
+            Available for software development opportunities, internships, and
+            project collaborations.
+          </p>
+        </div>
+        <div class="contact-actions">
+          <a class="contact-link" href="mailto:sundaramahaaraja@gmail.com">sundaramahaaraja@gmail.com</a>
+          <a class="contact-link" href="tel:+918903794605">+91 89037 94605</a>
+          <a class="contact-link" href="https://linkedin.com/in/sundara-mahaa-raja" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a class="contact-link" href="https://github.com/Sundar0207" target="_blank" rel="noreferrer">GitHub</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>Built for public hosting.</span>
+      <a href="#top">Back to top</a>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
